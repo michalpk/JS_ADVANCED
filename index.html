@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./main.js"></script>
+
+    <title>Weather - Prague</title>
+</head>
+
+<body>
+    <div class="flex-center w-100 h-100">
+        <div class="card flex-column">
+            <div class="flex-column">
+                <h2 class="position m-0" id="address">Prague</h2>
+                <span class="location" id="resolvedAddress">Prague, Capital city of Prague, Czech Republic</span>
+            </div>
+
+            <div>
+                <p>
+                    <b id="description">Partly cloudy throughout the day.</b>
+                </p>
+            </div>
+
+            <div class="conditions flex-column m-0">
+                <p>Temperature: <span id="temp">21</span>°C</p>
+                <p>Feels like: <span id="feelslike">5</span>°C</p>
+                <p>Humidity: <span id="humidity">51</span>%</p>
+                <p>Pressure: <span id="pressure">1020.8</span>hPa</p>
+                <p>UV Index: <span id="uvindex">5</span></p>
+            </div>
+
+            <div class="refresh flex-row">
+                <button onclick="fetchWeather()" id="refresh">Refresh</button>
+                <span>
+                    <i><span id="refreshed">Updating...</span></i>
+                </span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
